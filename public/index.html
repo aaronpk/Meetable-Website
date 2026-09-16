@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meetable: a minimal events website for your community</title>
+  <meta name="description" content="Meetable is an open source, self-hosted events website. Publish upcoming events, offer calendar feeds, collect RSVPs, and gather photos and notes from the people who attended.">
+  <meta name="theme-color" content="#c7104f">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://meetable.org/">
+  <meta property="og:title" content="Meetable">
+  <meta property="og:description" content="An open source, self-hosted events website for your community.">
+  <meta property="og:image" content="https://meetable.org/images/icon-512.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/images/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="/images/icon-192.png">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M10 14h44a2 2 0 0 1 2 2v38a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V16a2 2 0 0 1 2-2Z"/>
+        <rect x="15" y="8" width="3" height="10" rx="1.5"/>
+        <rect x="24" y="8" width="3" height="10" rx="1.5"/>
+        <rect x="33" y="8" width="3" height="10" rx="1.5"/>
+        <rect x="42" y="8" width="3" height="10" rx="1.5"/>
+        <path class="logo-heart" d="M32 47s-12-7.3-12-15.2A6.8 6.8 0 0 1 32 27.5a6.8 6.8 0 0 1 12 4.3C44 39.7 32 47 32 47Z"/>
+      </svg>
+      <span>Meetable</span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#get-started">Get started</a>
+      <a href="https://github.com/aaronpk/Meetable">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>A minimal events website for your community</h1>
+      <p class="lede">Meetable is an open source, self-hosted home for your events. Publish your meetups, conferences and online sessions. People can subscribe to your calendar, RSVP, and share what happened.</p>
+      <p class="actions">
+        <a class="button button-primary" href="#get-started">Get started</a>
+        <a class="button button-secondary" href="https://github.com/aaronpk/Meetable">View on GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrap narrow">
+      <h2>Your events, on your own site</h2>
+      <p>Meetable gives a community or organization one place to list upcoming events and keep an archive of past ones. Each event gets its own page with everything attendees need to know. Afterward, the page collects the photos, blog posts and notes people share about it.</p>
+      <p>Run it just for yourself or open it up to your whole team. It's built on Laravel, and you can host it anywhere PHP runs.</p>
+    </div>
+  </section>
+
+  <!--
+    Screenshots: add these files to public/images/ (1600x1000 works well):
+      screenshot-home.png, screenshot-event.png, screenshot-photos.png
+  -->
+  <section class="screenshots" aria-label="Screenshots">
+    <div class="wrap">
+      <figure>
+        <img src="/images/screenshot-home.png" width="1600" height="1000" alt="The Meetable home page, showing a list of upcoming events" loading="lazy">
+        <figcaption>Upcoming events at a glance</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/screenshot-event.png" width="1600" height="1000" alt="A Meetable event page with a cover photo, date, location and RSVPs" loading="lazy">
+        <figcaption>A page for every event</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/screenshot-photos.png" width="1600" height="1000" alt="Photos and notes from attendees on a past event page" loading="lazy">
+        <figcaption>Photos and notes from attendees</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="wrap">
+      <h2>Features</h2>
+      <ul class="feature-grid">
+        <li>
+          <h3>Event discovery</h3>
+          <p>Upcoming events on the home page, an archive of past events, and day, month and year views.</p>
+        </li>
+        <li>
+          <h3>Rich event pages</h3>
+          <p>A cover photo, location, website and ticket links, and a Markdown description. Mark events as tentative, postponed or cancelled, and add a video recording after the event.</p>
+        </li>
+        <li>
+          <h3>Recurring events</h3>
+          <p>Set up an event as a template and Meetable creates the upcoming dates for you. It supports weekly, biweekly and monthly schedules, including patterns like "the second Tuesday".</p>
+        </li>
+        <li>
+          <h3>Tags</h3>
+          <p>Give each event one or more tags. Visitors can browse by topic, and every tag has its own page and archive.</p>
+        </li>
+        <li>
+          <h3>Calendar feeds</h3>
+          <p>iCal feeds for the whole site, for each tag and for each event. An "Add to Calendar" link exports an .ics file or opens Google Calendar.</p>
+        </li>
+        <li>
+          <h3>Timezone aware</h3>
+          <p>The timezone is set automatically from the event's location. A built-in converter shows visitors the start time in their own timezone.</p>
+        </li>
+        <li>
+          <h3>RSVPs</h3>
+          <p>Logged-in users can RSVP yes, no, maybe or remote, and everyone can see who's coming.</p>
+        </li>
+        <li>
+          <h3>Photos &amp; responses</h3>
+          <p>Upload photos with alt text. With Webmention, people can post photos, blog posts and notes from their own websites, and you approve them in a moderation queue.</p>
+        </li>
+        <li>
+          <h3>IndieWeb friendly</h3>
+          <p>Event pages are marked up with h-event microformats. You can also import an event from another site just by pasting its URL.</p>
+        </li>
+        <li>
+          <h3>Flexible login</h3>
+          <p>Log in with a passkey, GitHub, OpenID Connect, Vouch Proxy or Heroku. Use it for a single organizer or for many users with admin permissions.</p>
+        </li>
+        <li>
+          <h3>Integrations</h3>
+          <p>Schedule Zoom meetings automatically, and post notifications to Discord. AI assistants can find your events through the built-in MCP server, and other tools can add events through the API.</p>
+        </li>
+        <li>
+          <h3>Make it yours</h3>
+          <p>Set your own logo, favicon, site text, custom CSS and analytics, all from the settings page.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="in-the-wild">
+    <div class="wrap">
+      <h2>Meetable in the wild</h2>
+      <ul class="site-list">
+        <li><a href="https://events.indieweb.org">events.indieweb.org</a></li>
+        <li><a href="https://events.oauth.net">events.oauth.net</a></li>
+        <li><a href="https://meet.modelcontextprotocol.io">meet.modelcontextprotocol.io</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="get-started" id="get-started">
+    <div class="wrap">
+      <h2>Get started</h2>
+      <p class="section-intro">Meetable needs PHP and MySQL. Pick whichever setup suits you, and see the <a href="https://github.com/aaronpk/Meetable#setup">README</a> for full instructions.</p>
+      <div class="install-grid">
+        <article>
+          <h3>Docker Compose</h3>
+          <p>Download the config files, fill in <code>.env</code>, and start the containers.</p>
+          <pre><code>curl -O https://raw.githubusercontent.com/aaronpk/Meetable/main/docker-compose.yml
+curl -o .env https://raw.githubusercontent.com/aaronpk/Meetable/main/.env.example
+docker compose up -d</code></pre>
+          <p><a href="https://github.com/aaronpk/Meetable#docker-compose">Docker instructions</a></p>
+        </article>
+        <article>
+          <h3>Manual install</h3>
+          <p>Install it on your own server with PHP 8.2+, Composer and MySQL or MariaDB. Redis is optional.</p>
+          <pre><code>git clone https://github.com/aaronpk/Meetable.git
+cd Meetable
+composer install
+php artisan migrate</code></pre>
+          <p><a href="https://github.com/aaronpk/Meetable#manual-installation">Installation instructions</a></p>
+        </article>
+        <article>
+          <h3>Heroku</h3>
+          <p>Deploy with one click, and a setup walkthrough will guide you through the configuration.</p>
+          <p><a class="button button-primary" href="https://heroku.com/deploy?template=https://github.com/aaronpk/Meetable">Deploy to Heroku</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Meetable is open source under the <a href="https://github.com/aaronpk/Meetable/blob/main/LICENSE.txt">MIT license</a>. Created by <a href="https://aaronparecki.com">Aaron Parecki</a>.</p>
+    <p><a href="https://github.com/aaronpk/Meetable">github.com/aaronpk/Meetable</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
